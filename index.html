@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur d'emprunt - Green Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+    <script type="module" src="forme.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <p><span>GREEN</span>-BANK</p>
+        </div>
+        <ul class="Menue">
+            <li><a href="#home">A propos</a></li>
+            <li><a href="#cars">Simulateur d'emprunt</a></li>
+            
+        </ul>
+        <a href="#contact"><button class="Btn">Contact</button></a>
+
+    </header>
+
+
+    
+    
+    <div class="container">
+        <MArquee><h1> welcome to your GREEN BANK simulator</h1></MArquee>
+        
+        <section class="background-section">
+            <div id="home">
+                <div class="Premier">
+                    <h2>À propos de la Green Bank</h2>
+                    
+                        <div class="element-droit">
+                              
+                            <p>
+                                La Green Bank, fondée en 2022, est une institution financière novatrice axée sur la durabilité et l'impact environnemental positif. Son objectif principal est de catalyser des investissements et des initiatives qui favorisent la transition vers une économie verte et durable.
+                            </p>
+                            <img src="img3.jpg" alt="">
+                        </div>   
+                </div>   
+            </div>
+            
+            <div class="Gauche"></div>
+            <h2>Notre nouvel outil de calcul de l'empreinte écologique</h2>
+            <p>
+                Répondant à la nécessité croissante de mesurer et de comprendre l'impact environnemental des activités humaines, la Green Bank est fière de présenter son nouvel outil de calcul de l'empreinte écologique. Cet outil interactif permet aux individus de quantifier leur impact sur l'environnement en termes de consommation d'énergie, d'émissions de gaz à effet de serre et d'utilisation des ressources naturelles.
+            </p>
+        </section>
+        <h2>Simulateur d'emprunt pour l'achat d'une voiture</h2>
+        <p>Bienvenue sur notre simulateur d'emprunt. Entrez les détails de votre véhicule et de votre emprunt ci-dessous
+            pour calculer votre taux d'emprunt.</p>
+        <form id="loan-form">
+            <label for="vehicle-type">Type de véhicule :</label>
+            <select id="vehicle-type">
+                <option value="citadine">Citadine</option>
+                <option value="cabriolet">Cabriolet</option>
+                <option value="Berline">Berline</option>
+                <option value="SUV /4*4">SUV / 4*4</option>
+            </select>
+            <label for="energy-type">Type d'énergie :</label>
+            <select id="energy-type">
+                <option value="essance">Essence</option>
+                <option value="electrique">Électrique</option>
+                <option value="gaz">Gaz</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Hybride">Hybride</option>
+            </select>
+            <label for="mileage">Kilométrage par an :</label>
+            <input type="number" id="mileage">
+            <label for="year">Année du véhicule :</label>
+            <input type="number" id="year">
+            <label for="passengers">Nombre de passagers :</label>
+            <input type="number" id="passengers">
+            <button type="submit">Calculer</button>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+
+    <!-- section contact -->
+
+    <section id="contact">
+        <h1 class="section_title">Nos Contact</h1>
+        <div class="localisation_contact_div">
+            <div class="localisation">
+                <h3>Notre Adresse</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31716.58930023155!2d2.320829486977479!3d6.448743036718356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1024a907d5334d9b%3A0xb28a9b10ccbc460a!2sAbomey%20Calavi!5e0!3m2!1sfr!2sbj!4v1685492809431!5m2!1sfr!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form_contact">
+                <h3>Envoyer un message</h3>
+                <form action="#">
+                    <input type="text" placeholder="Nom">
+                    <input type="email" placeholder="Adresse Mail">
+                    <input type="text" placeholder="Objet">
+                    <textarea name="" id="" cols="15" rows="8" placeholder="Message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Green Bank. Tous droits réservés.
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: all.5s linear;
+    text-decoration: none;
+    border: none;
+}
+html{
+    
+    scroll-padding-top: em;
+    
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+/* ==================================Pour la bar de Navigation================================================================ */
+header{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    height: 50px;
+    box-shadow: 0 0 10px 0 rgb(0,0,0,0.2);
+}
+header .logo{
+    color: #2fe32f;
+    font-size: 25px;
+    font-weight: bold;
+}
+header .logo span{
+    color: black;
+}
+
+
+.Menue{
+    display: flex;
+    
+}
+.Menue li{
+    list-style: none;
+    padding: 0 15px;
+    
+}
+.Menue li a{
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+    transition: 0.2s;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+
+.element-droit{
+    display: flex;
+}
+.element-droit p{
+    width: 400px;
+    height: 200px;
+    background-color: #ccc;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.element-droit img{
+    width: 400px;
+    height: 200px;
+    margin-top: 8px;
+    
+}
+
+/* ==================================================Pour le container============================================================ */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #007B63;
+    padding: 30px;
+}
+
+
+/* =====================================sylt utiliser pour les différentes élément de la forme========================= */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #007B63;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #005a4a;
+}
+#results {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #007B63;
+    color: #fff;
+    border-radius: 8px;
+}
+footer {
+    background-color: #007B63;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* =================================style pour le contacter nous====================================== */
+#contact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 12%;
+}
+.localisation_contact_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 100px 0;
+    height: 80vh;
+
+}
+.localisation{
+    width: 49%;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.2);
+    margin: 35px;
+    
+}
+.localisation iframe{
+    width: 100%;
+    border-radius: 6px;
+
+}
+.localisation_contact_div .form_contact{
+    width: 35%;
+    height: 93%;
+    box-shadow: 0 0 10px rgb(0,0,0,0.2);
+    border-radius: 6px;
+}
+.localisation_contact_div{
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 6px;
+}
+.localisation_contact_div .form_contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.form_contact form input,textarea{
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 5px;
+    outline: 0;
+    border-radius: 6px;
+    font-size: 15px;
+    resize: none;
+    width: 60%;
+}
+.form_contact form input[type="submit"]{
+    margin-bottom: 0;
+    background-color: #007B63;
+    color: #fff;
+    border: 0;
+    width: 60%;
+}
+.form_contact h3{
+    padding: 10px;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1, h2, p {
+    margin: 0.5em 0;
+}
+
+/* Styles pour les écrans de taille moyenne (tablette) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Styles pour les petits écrans (mobile) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
+/* =================================================Mon responsive pour la Bar de navigation============================================== */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #008000;
+}
+
+.nav-container .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-container ul li {
+    margin-left: 1em;
+}
+
+.nav-container ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles pour les écrans de taille moyenne (tablette) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-container ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container ul li {
+        margin: 0.5em 0;
+    }
+}
+
+/* Styles pour les petits écrans (mobile) */
+@media (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-container ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container ul li {
+        margin: 0.5em 0;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne (tablette) */
+@media (max-width: 768px) {
+    .nav-container .logo img {
+        height: 40px;
+    }
+}
+
+/* Styles pour les petits écrans (mobile) */
+@media (max-width: 480px) {
+    .nav-container .logo img {
+        height: 30px;
+    }
+}
+
+
